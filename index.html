@@ -1,61 +1,73 @@
-<html>
-    <head>
-	  <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css"/>
-        <title>Сергеев Анатолий Сергеевич</title>
-        </head>
-    <body>
-        <div id="header">
-          <h1>Сергеев Анатолий</h1>
-          <h3>Веб-разработчик</h3>
-          <p> 
-            <a href="serg.anatolii.serg@gmail.com"> serg.anatolii.serg@gmail.com, </a>
-            <a href="https://vk.com/id28411768"> https://vk.com/id28411768 </a> 
-          </p>
-          </div>
-          
-        <div id="main">
-          <p> Это я допишу потом
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+      <title>Курс валют</title>
+      <script src="Scripts.js"></script>
+		</head>
+		<body>
+			
+      <div id="output" style="float: right; width: 480px; min-height: 210px; height: auto; background: #80E5E5">
+	    </div>
+			
 
-</p>
-          
-          <section>
-          <h2>Опыт работы</h2>	
-          <h3>Майкрософт</h3>
-          <p class="before">Техничекий директор, <i>январь 2018 - февраль 2018</i></p>
-          <ul>
-            <li>то одно</li>
-            <li>то другое</li>
-          </ul>
-          
-          <h3>ООО "Т2 Мобайл" </h3>
-          <p class="before">Инженер по обслуживанию сети, <i>январь 2014 - январь 2018</i></p>
-          <ul>
-            <li>то одно</li>
-            <li>то другое</li>
-          </ul>
-          </section>
-          
-          <h2>Образование</h2>
-          <h3>НГТУ им. Р. Е. Алексеева</h3>
-          <p>Физика и техника оптической связи <i>2008г. - 2013г.</i></p>
-          <h3>Хекслет</h3>
-          <p>Курсы по программированию, <i>JS Backend developer, 2018г. - н.вр.</i></p>
-          
-          <h2>Другие навыки и увлечения</h2>
-          <ul>
-            <li>Основы дизайна</li>
-            <li>Практика английского языка</li>
-            <li>Игра на гитаре</li>
-            <li>Социальные танцы</li>
-            <li>Сноуборд</li>
-          </ul>
-          </div>
-          
-        <div id="footer">
-          <h3><b>Сергеев Анатолий</b></h3>
-          <p>ул. Бориса Панина, 19а, Нижний Новгород, Россия, +7 (908) 232 86 7 , <a href="serg.anatolii.serg@gmail.com"> serg.anatolii.serg@gmail.com </a></p>
-          </div>
-          
-        </body>
-    </html>
+			<form onsubmit="processedForm(document.forms[0]);
+											return false;">
+				<p><b>Выберите интересующую(ие) Вас валюту(ы):</b></p>
+				<table>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="USD">USD</label></td>
+						<td><label><input type="checkbox" name="valute" value="EUR">EUR</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="AUD">AUD</label></td>
+						<td><label><input type="checkbox" name="valute" value="BRL">BRL</label></td>
+						<td><label><input type="checkbox" name="valute" value="INR">INR</label></td>
+						<td><label><input type="checkbox" name="valute" value="NOK">NOK</label></td>
+						<td><label><input type="checkbox" name="valute" value="TRY">TRY</label></td>
+						<td><label><input type="checkbox" name="valute" value="CHF">CHF</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="AZN">AZN</label></td>
+						<td><label><input type="checkbox" name="valute" value="HUF">HUF</label></td>
+						<td><label><input type="checkbox" name="valute" value="KZT">KZT</label></td>
+						<td><label><input type="checkbox" name="valute" value="PLN">PLN</label></td>
+						<td><label><input type="checkbox" name="valute" value="TMT">TMT</label></td>
+						<td><label><input type="checkbox" name="valute" value="ZAR">ZAR</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="GBP">GBP</label></td>
+						<td><label><input type="checkbox" name="valute" value="HKD">HKD</label></td>
+						<td><label><input type="checkbox" name="valute" value="CAD">CAD</label></td>
+						<td><label><input type="checkbox" name="valute" value="RON">RON</label></td>
+						<td><label><input type="checkbox" name="valute" value="UZS">UZS</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="AMD">AMD</label></td>
+						<td><label><input type="checkbox" name="valute" value="DKK">DKK</label></td>
+						<td><label><input type="checkbox" name="valute" value="KGS">KGS</label></td>
+						<td><label><input type="checkbox" name="valute" value="XDR">XDR</label></td>
+						<td><label><input type="checkbox" name="valute" value="UAH">UAH</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="BYN">BYN</label></td>
+						<td><label><input type="checkbox" name="valute" value="CNY">CNY</label></td>
+						<td><label><input type="checkbox" name="valute" value="SGD">SGD</label></td>
+						<td><label><input type="checkbox" name="valute" value="CZK">CZK</label></td>
+						<td><label><input type="checkbox" name="valute" value="KRW">KRW</label></td>
+					</tr>
+					<tr>
+						<td><label><input type="checkbox" name="valute" value="BGN">BGN</label></td>
+						<td><label><input type="checkbox" name="valute" value="MDL">MDL</label></td>
+						<td><label><input type="checkbox" name="valute" value="TJS">TJS</label></td>
+						<td><label><input type="checkbox" name="valute" value="SEK">SEK</label></td>
+						<td><label><input type="checkbox" name="valute" value="JPY">JPY</label></td>
+					</tr>
+				</table>
+				<input type="reset">
+				<input type="submit" value="Показать">
+			</form>
+
+		</body>
+    
+	</html>
